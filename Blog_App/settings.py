@@ -127,9 +127,8 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [str(BASE_DIR.joinpath('static'))] # new
-STATIC_ROOT = STATIC_ROOT = str(BASE_DIR.joinpath('staticfiles'))  # new
-STATICFILES_STORAGE ='django.contrib.staticfiles.storage.StaticFilesStorage'  # new
-'whitenoise.storage.CompressedManifestStaticFilesStorage' # new
+STATIC_ROOT = str(BASE_DIR.joinpath('staticfiles'))  # new
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage' # new
 
 LOGIN_REDIRECT_URL = 'home'
 LOGOUT_REDIRECT_URL = 'home'
