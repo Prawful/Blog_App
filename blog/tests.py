@@ -17,7 +17,7 @@ class BlogTests(TestCase):
 
         self.post = Post.objects.create(
             title='A good title',
-body='Nice body content',
+            body='Nice body content',
             author=self.user,
         )
 
